@@ -64,21 +64,59 @@ Las siguientes son unas preguntas orientadoras que Ustedes deben investigar y co
 
     ![RISC](./images/img3.png)
     ---
-    ![CISC/RISK](./images/img4.png)
+    ![CISC/RISC](./images/img4.png)
     [Huawei Forum](https://forum.huawei.com/enterprise/intl/es/thread/%C2%BFcu%C3%A1l-es-la-diferencia-entre-las-arquitecturas-cisc-y-risc/667223574601154560?blogId=667223574601154560)
 3. ¿Qué es el hardware? Incluye los más relevantes, te voy a dar algunos elementos, pero si encuentras más, los puedes incluir.
+    
+    El hardware es el conjunto de componentes físicos y tangibles de un computador. Hay hardware interno, como la placa base, la CPU, entre otros y Hardware externo como el teclado, el mouse e incluso una impresora. 
+    
+    ![Hardware](./images/img5.jpg)
+    
     1. CPU. Escribe una definición y sus partes más relevantes. 
+        - La CPU es la unidad central de procesamiento de un computador, es el centro de control ya que recibe las instrucciones de la memoria, las decodificándolas y luego ejecutándolas, pudiendo así resolver operaciones lógicas y matemáticas. Recibe una entrada de datos y la transfroma en salida de información.
+        
         - ALU. Definición y función.
+            - Es la Unidad Aritmética Lógica, realiza las operaciones lógicas y aritméticas.
+        
         - Unidad de control. Definición y función.
+            - Ésta se encarga de buscar y decodificar las instrucciones dentro de la memoria para luego ejectuarlas. 
+      
         - Registros. Definición y función.
+            -  Almacena las instrucciones que se están ejecutando.
+
         - Buses. Definición y función.
+            - Son vías por las cuales se comunica, direcciones, señales y datos entre diferentes partes y componentes de un computador. Existen 3 tipos, de acuerdo con el tipo de información que transportan  buses direcciones, señales y datos respectivamente.
+
+        - Controlador de memoria (adicional a la consulta):
+            - Regula el flujo de información entre el procesador y la memoria. 
+
+        - Reloj:
+            - Mantiene los cicruitos sincronizados emitiendo pulsos, la velocidad de esos pulsos se llaman frecuencia y se miden en hercios y megahercios.
+    
+    [IBM](https://www.ibm.com/mx-es/think/topics/central-processing-unit)
+
     2. Memoria
         - Registros
+            - Se encuentran generalmente en la CPU, y almacenan temporalmente las instrucciones que se estén ejecutando.
+        
         - Caché
+            - Es una memoria de gran velocidad, se conidera auxiliar, esta vuelve más rapido el paso de información entre la RAM y la CPU.
+        
         - Principal (RAM)
+            - Es una memoria a corto plazo, almacena datos, programas y resultados ejecutados temporalmente. Para usos como gaming, una RAM con buena capacidad es esencial porque el juego utiliza esta memoria mientras está en uso. 
+      
+        - ROM
+            - Read Only Memory. Se utiliza para almacenar información básica que no se quiere eliminar o modificar,se utiliza para almacenar el sistema basico de entrada y salida (BIOS), entre otras cosas. 
+
         - Secundaria (Disco duro y unidades externas de almacenamiento)
+            - Son dispositivos de almacenamiento diferentes a los previamente mencionados, es decir no son esenciales para el funcionamiento del computador. Acá encontramos por ejemplo el disco duro, para almacenamiento de archivos y programas, las unidades o descos extraibles como USB flash, o en otras épocas CD's y Disquetes. 
+
+        
     3. Dispositivos de entrada / salida
+        - Son dispositivos que permiten la entrada y/o salida de datos del sistema, pueden ser integrados o no al computador. La cámaras web, micrófonos, teclados, escáneres e impresoras son excelentes ejemplos. 
+   
     4. Buses de datos
+    
 
 4. ¿Qué es el software?
     1. Software de sistema
