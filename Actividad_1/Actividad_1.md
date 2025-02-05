@@ -36,8 +36,7 @@ Las siguientes son unas preguntas orientadoras que Ustedes deben investigar y co
         - Procesamiento/Tratamiento de la información:
         -  Almacenamiento de datos y programas.
              - Recuperación de datos y programas.
-            - (Los programas son los procedimientos correctos para tratar adecuadamente la
-información)
+            - (Los programas son los procedimientos correctos para tratar adecuadamente la información)
 
     [Universidad de Valencia](https://www.uv.es/afuertes/Informatica/ficheros/tema1_TI.pdf)
 
@@ -51,7 +50,22 @@ información)
    
     1. Arquitectura CISC. 
     
+        Sus siglas significan "Complex Instruction Set Computing". Este agrupa varias operaciones en una sola instrucción, los conjuntos de operaciones contenidas en instrucciones son muy ámplios permitiendo así el desarrollo de múltiples tareas. Es más adecuado para programas que necesiten alta compatibilidad y para el desarrollo de bajo nivel. Sin embargo el desarrollo de los microprocesadores es mucho más complejo. Algunos ejemplos de CISC son:
+    - Intel x86 
+    - AMD x86-65
+    - Zilog Z80
+    
+     ![CISC](./images/img2.png)
+
+    ---
     2. Arquitectura RISC
+
+    Sus siglas significan "Reduced Instruction Set Computer", son más modernos que los CISC, estos utiizan comandos simples y la combinación de ellos para realizar diferentes tareas. Son más eficientes energéticamente y también para operaciones más simples; sin embargo para programación de bajo nivel ocupan muchísima más memoria dado que es operación por operación. Aunque en el caso del desarrollo de los microprocesadores, es mucho más rapido el desarrollo de RISC. 
+
+    ![RISC](./images/img3.png)
+    ---
+    ![CISC/RISK](./images/img4.png)
+    [Huawei Forum](https://forum.huawei.com/enterprise/intl/es/thread/%C2%BFcu%C3%A1l-es-la-diferencia-entre-las-arquitecturas-cisc-y-risc/667223574601154560?blogId=667223574601154560)
 3. ¿Qué es el hardware? Incluye los más relevantes, te voy a dar algunos elementos, pero si encuentras más, los puedes incluir.
     1. CPU. Escribe una definición y sus partes más relevantes. 
         - ALU. Definición y función.
