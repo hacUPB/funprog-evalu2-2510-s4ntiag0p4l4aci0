@@ -60,7 +60,7 @@ Las siguientes son unas preguntas orientadoras que Ustedes deben investigar y co
     ---
     2. Arquitectura RISC
 
-    Sus siglas significan "Reduced Instruction Set Computer", son más modernos que los CISC, estos utiizan comandos simples y la combinación de ellos para realizar diferentes tareas. Son más eficientes energéticamente y también para operaciones más simples; sin embargo para programación de bajo nivel ocupan muchísima más memoria dado que es operación por operación. Aunque en el caso del desarrollo de los microprocesadores, es mucho más rapido el desarrollo de RISC. 
+    Sus siglas significan "Reduced Instruction Set Computer", son más modernos que los CISC, estos utiizan comandos simples y la combinación de ellos para realizar diferentes tareas. Son más eficientes energéticamente y también para operaciones más simples; sin embargo para programación de bajo nivel ocupan muchísima más memoria dado que es operación por operación. Aunque en el caso del desarrollo de los microprocesadores, es mucho más rapido el desarrollo de RISC. Algunos ejemplos son:  ARM, DEC alpha y MIPS.
 
     ![RISC](./images/img3.png)
     ---
