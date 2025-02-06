@@ -113,17 +113,99 @@ Las siguientes son unas preguntas orientadoras que Ustedes deben investigar y co
 
         
     3. Dispositivos de entrada / salida
-        - Son dispositivos que permiten la entrada y/o salida de datos del sistema, pueden ser integrados o no al computador. La cámaras web, micrófonos, teclados, escáneres e impresoras son excelentes ejemplos. 
+        - Son dispositivos que permiten la entrada y/o salida de datos del sistema, pueden ser integrados o no al computador. La cámaras web, micrófonos, teclados, escáneres e impresoras son excelentes ejemplos. Una pantalla táctil, o una impresora con scanner son ejemplos bidireccionales. 
    
     4. Buses de datos
-    
+        - Son una serie de cables que permiten el flujo de información entre la CPU y la RAM, en este caso solo datos. 
+
+    [EDteam](https://ed.team/comunidad/memoria-principal-y-secundaria)
 
 4. ¿Qué es el software?
+
     1. Software de sistema
+        - Es el que permite que el computador funcione incluye el sistema , los controles del sistema y sus utilitarios. 
+
     2. Software de aplicación
+        - Programas que se utilizan para una funcion específica, como un procesador de texto, o bien una propia aplicación. 
+    
     3. Software de desarrollo
+        - Son herramientas digitales que permiten el desarrollo de nuevos programas, o la acutalización de los ya existentes. 
+
+    [EuroInnova](https://www.euroinnova.com/blog/que-es-el-software-y-sus-componentes-basicos#:~:text=programa%20de%20software.-,Clasificaci%C3%B3n%20de%20software,desarrollo%20de%20los%20ya%20existentes.)
+
+    ![Software](./images/img6.png)
+
 5. Funcionamiento del computador:
     1. ¿Qué procesos se llevan a cabo cuando se enciende una computadora?
+   
+    - Encendido de la alimantación: se energizan los componentes del sistema.
+
+   - POST (Power-On Self Test): Con el sistema basico de entrada y salida se realiza un diagnóstico del hardware esencial.
+
+   - Carga del BIOS: se inicializa el sistema basico de entrada y salida que permite cargar la configuracion básica del sistema.
+
+    - Detección del dispositivo de arranque: el BIOS buca el dispositivo desde el cual se va a ejecutar el sistema operativo.
+
+    - Carga del cargador de arranque: Se ejecuta el cargador de arranque y se carga el núcle del sistama operativo en la memoria del dispositivo.
+
+    - Inicialización del sitema operativo: Se cargan los sericios y controladores del sistema operativo. 
+
+    -  Pantalla de inicio de sesión: si es necesario, se presenta una forma de acceder para que el sistema cargue completamente.
+
+    - Ahora se puefe usar el dispositivo. 
+
+    [Hardzone](https://hardzone.es/tutoriales/montaje/arrancar-ordenador/)
+
     2. ¿Qué sucede desde que ingreso un dato a través del teclado, hasta que veo el resultado de la operación en la pantalla?
+   
+    - Entrada: El usuario oprime una tecla y el teclado envía una señal, cada técla tiene un código diferente. 
+
+    - Direciión: El sistema operativo recibe esta señal única y éste le encía una señal al programa activo.
+
+    - Procesamiento: se interpreta y se ejectua la operación desde la CPU.
+
+    - Almacenamiento: Los datos se pueden almacenarse temporalmente en la memoria RAM.
+
+    - Generación de salida: Wl programa da una respuesta con base en la operación realizada.
+
+    - Visualización: La GPU convierte esto en señales de pantalla.
+
+    - Salida de pantalla: Sale el resultado en la pantalla.
+
+    [Microsoft](https://learn.microsoft.com/es-es/windows/win32/inputdev/about-keyboard-input)
+   
     3. ¿Cómo se codifican los datos internamente en el computador?
+    
+    - Los datos en loc computadores se codifican binariamente, con 0 y 1, ya que los circuitos solo pueden estar encendidos o apagados, 0 apagado 1 encendido.
+
+        - Números: Se pasan de sistema decimal a binario
+
+        - Letras: con estandares ACII o Unicode se le asigna un valor numérico a la letra, luego este se pasa a binario y se almacena.
+
+        - Imágenes: Cáda pixel tiene un color dado por RGB (RED GREEN BLUE, el más usado para pantallas) ó CMYK, estos se representan por códigos de números asociados a cada color, es decir en RGB, un valor de rojo, uno de verde, y uno de azul, estos números se pasan a binario y se almacenan.
+            - Dato curioso (teoría fotográfica del color): El sistema RGB viene derivado de los colores de los leds, y los tonos se basan en la iluminación. EL sistema CMYK se utiliza principalmente para tintas, dado que el objetivo es cubrir un fondo blanco con otros colores. Originalmente el proposito de RGB y CMYK era opuesto. En la intersección se ve como RGB es blanco porque busca iluminar, y CYMK busca oscurecer:
+
+                ![colores](./images/img7.jpg)
+    
+    - 
+         - Sonido: se almacenn valores numéticos querepresentan la amplitud de onda en intervalos temporales. Estos valores se pasan a binario y se amacenan.
+
+        -  Videos: Se codifican las imágenes y el sonido y se comprimen usando distintos formatos. Los valores númericos comprimidos se pasan a binario y se almacenan.
+
+    [Universidad Politécnica de Cartagena](https://ocw.bib.upct.es/pluginfile.php/7809/mod_resource/content/1/031_040_capitulo_3_CODIFICACION_INTERNA_DE_LA_INFORMACION.pdf)
+
+
     4. ¿Cuáles son las unidades de medida de datos en un computador? Bit, Byte, etc.
+
+   -  Las unidades de medida de daros en un computador están dadas por potencias en base 2.
+   Un bit es la unidad mínima de medida de cantidad de información, equivalente a la probailida entre dos opciones. Es decir un solo dígito, que puede ser 1 o 0.
+
+        -  A partir de eso tenemos estos valores: 
+
+    ![almacenamiento de datos](./images/img8.jpg)
+
+    [IBM](https://www.ibm.com/docs/es/storage-insights?topic=overview-units-measurement-storage-data)
+
+    
+
+Santiago Palacio Vargas 2025
