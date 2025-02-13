@@ -66,4 +66,20 @@ int main(void)
     }
     return 0;
 }
+
+
+```
+
+```python:
+
+x = input("ponga una letra").lower()
+if x != "y":
+    print("hola")
+
+else:
+    z = 0
+    while z <= 10:
+        print("hola")
+        z = z+1
+
 ```
