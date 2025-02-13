@@ -15,3 +15,23 @@ Analicemos el siguiente problema y representemos su solución mediante un algori
 - Construye un algoritmo que, al recibir como datos **el ID** del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
 
 ![diagrama de flujo 3](./images/img3.png)
+
+
+
+
+INICIO
+Escribir "Ingrese una letra, si escoge la correcta se lleva un premio mágico"
+Leer x
+
+si x =  "y":
+    i = 10
+    Mientras i>0:
+        Escribir "Hola"
+        i = i - 1
+    Fin Mientras
+
+Si no:
+    Escribir "Hola
+Fin Si
+
+Fin
