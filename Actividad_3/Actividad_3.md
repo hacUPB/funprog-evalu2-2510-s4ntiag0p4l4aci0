@@ -16,7 +16,7 @@ Analicemos el siguiente problema y representemos su solución mediante un algori
 
 ![diagrama de flujo 3](./images/img3.png)
 
-
+![diagrama de flujo 4](./images/img4.png)
 
 
 INICIO
