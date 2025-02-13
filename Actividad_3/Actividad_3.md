@@ -72,7 +72,7 @@ int main(void)
 
 ```python:
 
-x = input("ponga una letra").lower()
+x = input("Ingrese una letra, si escoge la correcta se lleva un premio mágico").lower()
 if x != "y":
     print("hola")
 
