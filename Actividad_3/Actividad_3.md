@@ -35,3 +35,35 @@ Si no:
 Fin Si
 
 Fin
+
+
+
+```c:
+#include <stdio.h>
+
+int main(void)
+{
+    char x;
+    int i;
+    
+    printf("Ingrese una letra, si escoge la correcta se lleva un premio mágico\n");
+    
+    scanf("%c", &x);
+    
+    if(x=='y'){
+        
+        i = 10;
+        
+        while(i > 0){
+            
+            printf("Hola\n");
+            i = i-1;
+        }
+    }
+    
+    else{
+        printf("Hola\n");
+    }
+    return 0;
+}
+```
