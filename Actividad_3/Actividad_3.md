@@ -16,27 +16,42 @@ Analicemos el siguiente problema y representemos su solución mediante un algori
 
 ![diagrama de flujo 3](./images/img3.png)
 
+
+### Solución en Diagrama de Flujo
+
+
 ![diagrama de flujo 4](./images/img4.png)
 
+### Solución en Pseudocódigo
+
+```txt:
 
 INICIO
+
 Escribir "Ingrese una letra, si escoge la correcta se lleva un premio mágico"
+
 Leer x
 
 si x =  "y":
     i = 10
     Mientras i>0:
+
         Escribir "Hola"
+
         i = i - 1
+
     Fin Mientras
 
 Si no:
+    
     Escribir "Hola
+
 Fin Si
 
 Fin
 
-
+```
+### Solución en C
 
 ```c:
 #include <stdio.h>
@@ -69,7 +84,7 @@ int main(void)
 
 
 ```
-
+### Solución en Python
 ```python:
 
 x = input("Ingrese una letra, si escoge la correcta se lleva un premio mágico").lower()
