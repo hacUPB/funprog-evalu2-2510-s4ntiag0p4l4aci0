@@ -98,3 +98,77 @@ else:
         z = z+1
 
 ```
+## Ejercicios
+
+### Ejercicio 1:
+
+Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
+
+![Ejercico 1](./images/img5.jpg)
+
+#### Solución complementaria en Python
+
+```python:
+x = int(input("Cantidad de lápices"))
+
+if x  >= 1000:
+    y = 85*x
+    
+else:
+    y = 90*x
+    
+print(y)
+
+```
+
+## Ejercicio 2
+
+Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
+
+![Ejercicio 2](./images/img6.jpg)
+
+#### Solución complementaria en Python
+
+```python:
+
+subtotal = int(input("ingrese valor de la compra"))
+
+if subtotal >= 250000:
+    descuento = subtotal*0.15
+    
+else:
+    descuento = subtotal*0.08
+    
+total = subtotal - descuento
+
+print(f"El precio es {total} y el descuanto es {descuento}")
+
+```
+
+### Ejercicio 3
+
+El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+![Ejercicio 3](./images/img7.jpg)
+![Ejercicio 3](./images/img8.jpg)
+
+Nota el total puede ser el mismo para todo, ya que para el caso de menos de 30 el costo es 4000/x si tenemos en cuenta total = x*costo, entonces se cancelaría el denominador e igual quedaría como 4000
+#### Solución complementaria en Python
+
+```python:
+x = int(input("número de estudaintes"))
+
+if x >= 100:
+    costo = 65
+else:
+    if x > 50: 
+        costo = 70
+    else:
+        if x > 30:
+            costo = 95
+        else:
+            costo = 4000/x
+total = x*costo
+
+print(f"Dado que el costo por alumno es {costo}, el total sería {total}")
+```
