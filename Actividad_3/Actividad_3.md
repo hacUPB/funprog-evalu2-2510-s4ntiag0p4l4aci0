@@ -252,6 +252,9 @@ Indica si las siguientes afirmaciones describen una variable o una constante:
 Responde si los siguientes enunciados cumplen con las características de un algoritmo. Justifica la respuesta:
 
 1. Para elegir la ruta más corta entre varias ciudades, el algoritmo examina rutas candidatas, deteniéndose cuando los cambios en la distancia parecen lo suficientemente pequeños.
+
+    - Cumple con la condición de algoritmos, ya que tiene unas variables definidas, comparaciones y una vez se compara y se presenta el resultado en el orden establecido, tiene un fin.
+
 2. Suma los números ingresados y muestra el resultado.
 3. Un conjunto de pasos para calcular el área de un rectángulo dado su base y altura.
 4. El algoritmo cuenta el número de votos obtenidos por cada uno de los candidatos de una elección para presidente. Empieza solicitando el nombre del candidato y finaliza cuando se ingresa el valor -1.
