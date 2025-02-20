@@ -172,3 +172,99 @@ total = x*costo
 
 print(f"Dado que el costo por alumno es {costo}, el total sería {total}")
 ```
+
+
+# 📤 **Consigna tus respuestas en la bitácora**
+
+A continuación, se presentan enunciados relacionados con los temas tratados en el texto. Los estudiantes deben responder si los enunciados corresponden o no con las definiciones o conceptos aprendidos.
+
+### Parte 1: Identificar Algoritmos
+
+Responde si los siguientes enunciados representan un algoritmo. Justifica la respuesta:
+
+1. Una página web.
+
+    - Tenemos algoritmos en la parte programable de la página, es decir en el backend, trabajese con python, javascript, jason, entre otros, ya que acá se tienen una serie de funciones y pasos definidos para el funcionamiento de la página. Por otro lado, no habría algoritmos en los archivos de formato, como el html, ya que es solo organizar por medio de tags los algoritmos previamente definidos. 
+
+
+---
+
+2. Una receta para hacer un pastel, donde se indican ingredientes y pasos a seguir.
+
+    - Efectivamente es un algoritmo, ya que los ingredientes del pastel son finitos, los ingredientes están derfinidos.
+
+---
+3. "Piensa en un número y multiplícalo por otro".
+
+    - Es un algoritmo, tiene finitud pues consta de una operación clara, estos números se definen por el usuario. Y tiene orden.
+
+---
+
+4. Un manual de instrucciones para armar un mueble, con pasos detallados y un orden claro.
+
+    - Tiene inicio y fin, hay claridad en los pasos y están definidos. Por ende es un algoritmo.
+
+---
+
+5. Una lista de compras organizada en orden alfabético
+
+    - No es un algoritmo, ya que no es una secuencia de instrucciones sino una lista de datos. No tiene un fin claro. ya que posría comprarse todo el supermercado.
+
+    ---
+
+### Parte 2: Variables y Constantes
+
+Indica si las siguientes afirmaciones describen una variable o una constante:
+
+1. El valor de la gravedad en la Tierra, 9.8 m/s².
+
+ - Es constante, ya que en la tierra siempre el valor de la gravedad es el mismo por está definido por medio de la constante g=9,8m/s²
+
+---
+
+2. La edad de una persona calculada en base al año actual y su año de nacimiento.
+
+    - Es una variable, ya que el año puede cambiar. Sin embargo, el año de nacimiento siempre será constante.
+---
+
+3. La cantidad de dinero en una cuenta bancaria.
+
+    - Teniendo en mente las consignaciones, los retiros, cuotas de manejo de trajetas e intereses ganados, el saldo siempre cambiará, por ende es variable.
+
+---
+
+
+4. La velocidad de la luz en el vacío, 299,792,458 m/s.
+
+    - Es contante, y está definida por la constante por c = 299,792,458 m/s, podemos encontrar esta contante en fórmulas como: E = mc²
+
+---
+
+5. El radio de un círculo.
+
+    - Es variable, dado que el radio depende de la distancia entre el centro y la circunferencia, por ende si se cambia la magnitud de la figura, cambiaría el radio.
+
+---
+
+
+### Parte 3: Características de los Algoritmos
+
+Responde si los siguientes enunciados cumplen con las características de un algoritmo. Justifica la respuesta:
+
+1. Para elegir la ruta más corta entre varias ciudades, el algoritmo examina rutas candidatas, deteniéndose cuando los cambios en la distancia parecen lo suficientemente pequeños.
+2. Suma los números ingresados y muestra el resultado.
+3. Un conjunto de pasos para calcular el área de un rectángulo dado su base y altura.
+4. El algoritmo cuenta el número de votos obtenidos por cada uno de los candidatos de una elección para presidente. Empieza solicitando el nombre del candidato y finaliza cuando se ingresa el valor -1.
+
+### Parte 4: Comprensión de Herramientas
+
+Indica si las siguientes afirmaciones son ciertas o falsas respecto al pseudocódigo y diagramas de flujo:
+
+1. El pseudocódigo utiliza símbolos estándar para representar las operaciones lógicas.
+2. Los diagramas de flujo son una representación gráfica de un algoritmo.
+3. El pseudocódigo debe estar escrito en un lenguaje de programación específico.
+4. Un diagrama de flujo siempre debe tener un inicio y un fin claramente definidos.
+
+### Parte 5: Estructuras de Control
+
+Describe para qué sirven las estructuras de control. Redacta dos ejemplos, uno de tu vida diaria, es decir cuando tienes que tomar decisiones en tus actividades diarias y oto ejemplo en el que se tengan que utilizar cálculos matemáticos para tomar una u otra decisió
