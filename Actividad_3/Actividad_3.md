@@ -172,6 +172,65 @@ total = x*costo
 
 print(f"Dado que el costo por alumno es {costo}, el total sería {total}")
 ```
+## ACTIVIDADES DE CLASE
+
+1. 
+### Diagrama de flujo
+
+![Ejercicio 4](./images/img9.jpg)
+
+### Pseudocódigo
+
+
+```txt:
+
+INICIO
+condición = 1
+veces  = 0
+suma_estatura = 0
+
+mientras condición diferente de 0
+
+	
+	Escribir “ ingrese estatura”
+
+	Leer estatura
+
+	suma_estatura = suma_estatura + estatura
+	
+
+si estatura <= 0
+
+		condición = 0
+		suma_estatura = suma_estatura - estatura
+
+sino
+veces = veces +1
+
+fin si
+
+
+
+fin mientras
+
+si veces = 0
+
+	mostrar no hay promedio, la división por 0 no está definida
+
+sino 
+promedio = suma_estatura/veces
+
+mostrar promedio
+
+fin si
+FIN
+
+
+```
+
+2. 
+
+![Ejercicio 5](./images/img10.jpg)
 
 
 # 📤 **Consigna tus respuestas en la bitácora**
@@ -255,19 +314,80 @@ Responde si los siguientes enunciados cumplen con las características de un alg
 
     - Cumple con la condición de algoritmos, ya que tiene unas variables definidas, comparaciones y una vez se compara y se presenta el resultado en el orden establecido, tiene un fin.
 
+---
+
 2. Suma los números ingresados y muestra el resultado.
+
+    - Teniendo en mente que suma una cantidad de numeros que se ingresan, y asumiendo que son dos números, sería un algoritmo, y que sería finito, determinado y claro en los pasos. Sin embargo, si no se tuviese un máximo de números por ingresar, dejaría de ser algoritmo al no ser finito.
+
+---
+
 3. Un conjunto de pasos para calcular el área de un rectángulo dado su base y altura.
+
+    - Es un algoritmo, tiene una cantidad de variables definidas, base y altura, es finito y estpa organizado por pasos. 
+
 4. El algoritmo cuenta el número de votos obtenidos por cada uno de los candidatos de una elección para presidente. Empieza solicitando el nombre del candidato y finaliza cuando se ingresa el valor -1.
 
+
+    - 
 ### Parte 4: Comprensión de Herramientas
 
 Indica si las siguientes afirmaciones son ciertas o falsas respecto al pseudocódigo y diagramas de flujo:
 
 1. El pseudocódigo utiliza símbolos estándar para representar las operaciones lógicas.
-2. Los diagramas de flujo son una representación gráfica de un algoritmo.
-3. El pseudocódigo debe estar escrito en un lenguaje de programación específico.
-4. Un diagrama de flujo siempre debe tener un inicio y un fin claramente definidos.
 
+    - FALSO (sin embargo se puede llegar a convenciones en un determinado grupo)
+
+---
+
+2. Los diagramas de flujo son una representación gráfica de un algoritmo.
+
+    - VERDADERO
+
+---
+
+3. El pseudocódigo debe estar escrito en un lenguaje de programación específico.
+
+    - FALSO
+
+---
+
+4. Un diagrama de flujo siempre debe tener un inicio y un fin claramente definidos.
+    - VERDADERO
+
+---
 ### Parte 5: Estructuras de Control
 
-Describe para qué sirven las estructuras de control. Redacta dos ejemplos, uno de tu vida diaria, es decir cuando tienes que tomar decisiones en tus actividades diarias y oto ejemplo en el que se tengan que utilizar cálculos matemáticos para tomar una u otra decisió
+Describe para qué sirven las estructuras de control. Redacta dos ejemplos, uno de tu vida diaria, es decir cuando tienes que tomar decisiones en tus actividades diarias y oto ejemplo en el que se tengan que utilizar cálculos matemáticos para tomar una u otra decisión.
+
+#### 1. Condicionales:
+
+- Los condicionales nos permiten analizar determinado parametro en función de su veracidad o falsedad. Y apartir de la asignación de este valor de verdad se procede a una consecuencia dependiendo de la veracidad.
+
+    - En la vida real, podría ser, si está lloviendo: llevo paraguas; sino no. También podría ser: ¿Es la hora de dormir?, si es la hora de dormir me acuesto, sino sigo haciendo tareas".
+
+    - Matemáticamente si un determinado número x, es menor a 0, es negativo, sino es positivo. En otro caso, lo podriamos usar para las excepciones en el dominio de una función, si el dominio es (-infinito, 3)U(5, infinito), podriamos decir que, si x está entre 3 y 5, la función está definida, en el caso contrario, se obtiene valor correspondiente de y.
+
+
+#### 2. Bucles/Ciclos/Loops:
+
+- Mientras que una determinada condición se cumpla, hasta que esta se cumpla o se deje de cumplir, se realiza cierto proceso definido dentro del algoritmo.
+
+ - En la vida real, un partido se deja de cronometrar, CUANDO, el árbitro pita. Se es menor de edad HASTA que la edad sea mayor a 18. Hago el ejercicio del taller HASTA que me salga. MIENTRAS haya luz del sol me debo echar bloqueador cada 3hrs. 
+
+ - Matemáticamente, lo podriamos hacer para graficar funciones, tal como en el ejemplo anterior, pero se graficaría mientras la función esté definida. En otras palabras, se grafica MIENTRAS el valor de x se encuentre incluido en el dominio. Para calcular la deistancia entre dos puntos en el E^n:
+   
+    - ![puntos](./images/img11.jpg)
+
+- Mirando el numero de dimensiones, hallamos el valor de la variable de iteración, vamos restándole 1, y se repite la sumatoria hasta que la variable de iteración sea 0. 
+
+## FIBOANACCI
+
+- 1. Diagrama de flujo:
+
+![Fiboanacci 1](./images/img12.jpg)
+
+
+- 2. Diagrama de flujo:
+
+![Fiboanacci 2](./images/img13.jpg)
