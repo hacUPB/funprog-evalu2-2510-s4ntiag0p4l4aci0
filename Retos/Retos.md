@@ -67,7 +67,7 @@ más de 50 horas no está permitido. Represente el algoritmo mediante pseudocód
 
 5. Se requiere un algoritmo para determinar, de N cantidades, cuántas son cero, cuántas son menores a cero, y cuántas son mayores a cero. Realice el pseudocódigo para representarlo, utilizando el ciclo apropiado.
 
-![img5](./images/img2.jpg)
+![img5](./images/img5.jpg)
 
 ---
 6. Se requiere un algoritmo para determinar cuánto ahorrará en pesos una persona diariamente, y en un año, si ahorra 3¢ el primero de enero, 9¢ el dos de enero, 27¢ el 3 de enero y así sucesivamente todo el año. Represente la solución mediante pseudocódigo.
