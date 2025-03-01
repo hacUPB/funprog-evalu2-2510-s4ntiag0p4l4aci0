@@ -11,7 +11,7 @@ Este tutorial te guiará a través del proceso de:
 Pregunta orientadora:
  - ¿Por qué crees que el pseudocódigo es útil antes de escribir un programa en C?
 
-    - Al escribir un pseudocódigo, o bien un diagrama de flujo, se plasma la solución en un conjunto de pasos en un orden lógico y conciso,
+    - Al escribir un pseudocódigo, o bien un diagrama de flujo, se plasma la solución en un conjunto de pasos en un orden lógico y conciso, volviendo así la solución un algoritmo de comando simples, que son fáciles de traducir a cualquier lenguaje de programación para ser ejecutados.Incluso desde el pesudocódigo es fácil detectar errores en la prueba de escritorio que eahooran mucho tiempo después.  
 
 
 ---
@@ -32,6 +32,53 @@ FIN
 > Actividad
 > 
 > - Toma un pseudocódigo de un ejercicio anterior o escribe tu propio pseudocódigo, similar al mostrado en el ejemplo de arriba.
+
+```txt
+
+INICIO
+
+condición = 1
+veces  = 0
+suma_estatura = 0
+
+mientras condición diferente de 0
+
+	
+		Escribir “ ingrese estatura”
+
+		Leer estatura
+
+		suma_estatura = suma_estatura + estatura
+	
+
+si estatura <= 0
+
+			condición = 0
+			suma_estatura = suma_estatura - estatura
+
+sino
+veces = veces +1
+
+fin si
+
+
+
+fin mientras
+
+si veces = 0
+
+	mostrar no hay promedio, la división por 0 no está definida
+
+sino 
+promedio = suma_estatura/veces
+
+mostrar promedio
+
+fin si
+FIN
+
+```
+
 
 **Retos**:
 
@@ -82,10 +129,11 @@ int main() {
 }
 ```
 
-> Pregunta orientadora
-> 
-> - ¿Por qué es importante declarar el tipo de variable (int, float, etc.) antes de usarla en C?
 
+> Pregunta orientadora
+ - ¿Por qué es importante declarar el tipo de variable (int, float, etc.) antes de usarla en C?
+
+    - En los diferentes lemguajes de progrmación el tipo de varibales ocupan un diferente tipo de bytes. Cuando declaramos una variable,reservamos un espacio en la memoria para almacenar el valor que esta tome, es importante saber que tipo de variable es para saber que tanta memoria se reserva. Dejando de lado la memoria, es importante tener en mente que un tipo de caracter se puede usar como diferentes tipos de datos, por ejemplo, los números, en una contraseña o ID, se alacenan como string; pero para sumar cantidades los números se utilizan como enteros o flotantes, o inclusive se les pueden aumentar las cifras decimales. Dado esto, resulta fundamental declarar los tipos de datos desde el principio de acuerdo con el uso que se les dará,
 ---
 
 ## 4. Ejemplos adicionales de pseudocódigo y su traducción
@@ -170,7 +218,60 @@ int main() {
 
 > Actividad
 > 
-> - Escribe tu propio pseudocódigo para calcular el promedio de una lista de calificaciones y tradúcelo a C.
+- Escribe tu propio pseudocódigo para calcular el promedio de una lista de calificaciones y tradúcelo a C.
+
+ - Pseudocódigo
+
+ ```txt
+INICIO
+
+Escribir número de calificaciones a ingresar
+leer n
+controlador = 0
+suma = 0 
+
+Mientras controlador <= n
+	
+	Escribir “ingrese la calificación”
+
+	Leer calificación
+	
+	suma = suma + calificación
+
+	controlador = controlador +1
+Fin mientras
+
+promedio = suma / n
+	
+FIN
+ ```
+
+- Código en C
+
+```C
+#include <stdio.h>
+
+int main() {
+    int n, controlador = 0;
+    float suma = 0, calificacion, promedio;
+
+    printf("Ingrese el número de calificaciones: ");
+    scanf("%d", &n);
+
+    while (controlador < n) {
+        printf("Ingrese la calificación: ");
+        scanf("%f", &calificacion);
+        suma = suma + calificacion;
+        controlador = controlador + 1;
+    }
+
+    promedio = suma / n;
+    printf("El promedio es: %f\n", promedio);
+
+    return 0;
+}
+```
+
 
 ---
 
@@ -180,9 +281,40 @@ int main() {
 2. **Funciones**: Divide tu código en funciones para mantenerlo ordenado.
 3. **Convenciones de nombres**: Utiliza nombres descriptivos para variables y funciones.
 
+ - Código anterior en C con comentrarios:
+
+
+```C
+#include <stdio.h>
+
+int main() {
+    int n, controlador = 0; //usamos n y controlador aparte, como hay que sacar un promedio, se necesita el valor de n
+    float suma = 0, calificacion, promedio; //Las calificaciones tienen decimales, por ende sus promedios también
+
+    printf("Ingrese el número de calificaciones: ");// importante saber cuantas son para que el algoritmo sea finito
+    scanf("%d", &n);
+
+    while (controlador < n) {
+        printf("Ingrese la calificación: ");
+        scanf("%f", &calificacion);
+        suma = suma + calificacion;
+        controlador = controlador + 1;
+    } // tenemos un bucle con controlador como condicion iterante, para no afectar el valor de n, que es por el valor que se divide para obtener el promedio. 
+
+    promedio = suma / n;
+    printf("El promedio es: %f\n", promedio);
+
+    return 0;
+}
+```
+
+
+
 > Pregunta orientadora
 > 
-> - ¿Por qué es importante comentar el código, aunque sea breve y conciso?
+- ¿Por qué es importante comentar el código, aunque sea breve y conciso?
+
+    - Es altamente probble que el código lo lea y/o lo edite otra persona, por ende es fundamental cerciorarse de que la otra persona entienda.  Esto se puede complementar nombrando las variables de una forma coherente, para que sean intuitivamente entendibles y el comentario sea más relevante. También por medio de la lectura de comentarios es más fácil identificar, la similitud entre estructuras de código, por si en la posteridad se requiere una serie de passo similares. O bien, al sintetizar nuevamente en palabras lo que se quiere hacer, se puede ver si hay redundancias o falta algo.
 
 ---
 
@@ -195,6 +327,186 @@ int main() {
 3. **Comenta** tu código para explicar los pasos principales.
 
 ---
+
+## Reto 1
+![img1](./images/img1.jpg)
+
+```txt
+
+INICIO
+
+	Escribir “cuatro variables primero las 2 componentes de x, y luego las dos de y”
+	Leer x1, x2, y1, y2
+
+	a = x2 -x1
+	b = y2 - y1
+
+	a2 = a * a
+
+	b2 = b *b
+	
+	d = sqrt(a2 + b2)
+	imprimir “la distancia entre P(”x1”, “y1”) y P(”x2”, “y2”) es:” d
+FIN
+
+```
+
+```c
+#include <stdio.h>
+#include <math.h> // se incluye la librería para la función sqrt()
+
+int main() {
+    double x1, x2, y1, y2; // variables de entrada
+    double a, b, a2, b2; // variables auxiliares
+    double d; // variable de salida
+    
+    printf("Cuatro variables: primero las 2 componentes de x, luego las dos de y\n");
+    scanf("%lf %lf %lf %lf", &x1, &x2, &y1, &y2);
+    //lf se utiliza para double, f solo es para float
+
+    a = x2 - x1;
+    b = y2 - y1;
+    // volvimos las diferencias de las componentes, una sola variable por componente
+    
+    a2 = a * a;
+    b2 = b * b;
+
+    // elevamos las variables auxiliares al cuadrado
+    
+    d = sqrt(a2 + b2);
+
+    //sacamos la raiz de la fórmula
+    
+    printf("La distancia entre P(%f, %f) y P(%f, %f) es: %f\n", x1, y1, x2, y2, d);
+    // le damos formato a la salida
+
+    return 0;
+}
+
+```
+---
+## Reto 2
+
+ - Imagen
+
+![img2](./images/img3.jpg)
+
+ - Pseudocódigo
+
+```txt
+INICIO
+Hacer
+
+	Escribir “ingrese catetos (2 números)”
+
+	Leer A, B
+
+Mientras
+
+A ó B < 0
+
+A2 = A*A
+
+B2 = B*B
+
+C = sqrt(A2+ B2)
+
+Imprimir “la hipotenusa es:” C
+
+FIN
+
+```
+ - Código en C
+
+```c
+#include <stdio.h>
+#include <math.h> // para usar sqrt() necesitamos incluir la librería
+
+int main() {
+    double A, B; // variables de entrada
+    double  A2, B2; // variables auxiliares
+    double  C; // salida
+    
+    do {
+        printf("Ingrese catetos (2 números): ");
+        scanf("%lf %lf", &A, &B);
+    } while (A < 0 || B < 0);
+    // usamos "ó" en el while, si A o B es negativo, no pueden haber lados negativos de un tríangulo y pedimos que se repita
+
+    A2 = A * A;
+    B2 = B * B;
+    C = sqrt(A2 + B2);
+    // usamos esta pate similar del código anterior, haciendo los cuadrados variables auxiliares y luefo sacar una raíz de la suma
+
+    printf("La hipotenusa es: %f\n", C);
+
+    // le damos formato a la salida
+    
+    return 0;
+}
+
+```
+
+---
+## Reto 3
+
+ - Imagen
+
+![img3](./images/img2.jpg)
+
+ - Pseudocódigo
+
+```txt
+
+```
+ - Código en C
+
+```c
+
+```
+
+---
+---
+## Reto 4
+
+ - Imagen
+
+![img4](./images/img4.jpg)
+
+ - Pseudocódigo
+
+```txt
+
+```
+ - Código en C
+
+```c
+
+```
+
+---
+---
+## Reto 5
+
+ - Imagen
+
+![img5](./images/img5.jpg)
+
+ - Pseudocódigo
+
+```txt
+
+```
+ - Código en C
+
+```c
+
+```
+
+---
+
+--- 
+
 
 <aside>
 💡
