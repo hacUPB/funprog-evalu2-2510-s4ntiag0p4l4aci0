@@ -83,3 +83,35 @@ Con la información recolectada, organiza los datos en una tabla que incluya:
 [Ionos](https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/python-data-types/)
 
 [Chat GPT + formato propio](https://chatgpt.com/c/67a60c34-1180-800a-a46f-a85d174a4432)
+
+
+## 📤 **5. Ejercicio de cálculo de espacio en memoria**
+
+Imagina que necesitas almacenar la siguiente información en un programa:
+
+- Un identificador numérico (número entero)
+- Una temperatura (valor de punto flotante)
+- Un valor lógico (dato booleano)
+- Un texto con 10 caracteres.
+
+Se almacena la información cada 10 segundos durante 24 horas. Calcula cuánto espacio total se requiere en memoria para almacenar estos datos. Describe el procedimiento y muestra el resultado final.
+
+
+- Se almacena un registro cada 10 segundos.
+- 24 horas = 86,400 segundos.
+- Esto lo dividimos entre 10 = 8640
+
+Esteresultado lo multiplicamos por el numero de Bytes de cada tipo de dato
+
+
+- int → 8640 × 4 → 34560 bytes (33.75 KB)
+- float → 8640 × 4 → 34560 bytes (33.75 KB)
+- _Bool → 8640 × 1 → 8640 bytes (8.44 KB)
+- char[10] → 8640 × 10 → 86400 bytes (84.38 KB)
+
+## 📤 **6. Conclusión**
+
+Finalmente, explica con tus propias palabras el resultado de esta actividad y qué aprendiste acerca de la representación de datos en las computadoras.
+
+- Antes de empezar a programar, debemos saber la forma en la que entienden los computadores. La lógica booleana,que permite representar los estados encendido y apagado, nos lleva al core del funcionamiento de un computador, a lo más básico, y luego vamos subiendo progresivamente, al almacenamiento de información en conjuntos de 8 bits llamados bytes, y a raíz de eso, también comprendemos las unidades de almacenamiento y que significan. Luego, pudimos ver cuanto almacenamiento ocupaban y cómo se almacenaban los diferentes tipos de variables en los lenguajes de programación, entendiendo la importancia de especificar, optimizar, pero lo más importante es saber cómo se almacenan los datos que posteriormente ingresaremos.
+
