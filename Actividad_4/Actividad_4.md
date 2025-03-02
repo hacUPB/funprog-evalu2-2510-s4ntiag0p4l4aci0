@@ -457,11 +457,75 @@ int main() {
  - Pseudocódigo
 
 ```txt
+INICIO
+
+	Hacer
+		Escribir largo, ancho y espesor, si no sabe espesor coloque 0
+
+		Leer largo, ancho, espesor
+
+		pulgadas = 39,37
+
+		Lp = largo*pulgadas
+		Ap = ancho*pulgadas
+		Ep= espesor*pulgadas
+		Atela= Lp * Ap
+
+		Si espesor = 0
+			Imprimir “El área de la tela es” Atela” n^2”
+
+		Sino
+			Vtela = At*Ep
+			Imprimir ““El área de la volumen es” Atela” n^2”
+
+		Fin si
+
+		Escribir desea otra medida
+
+		Leer otra
+
+	Mientras otra != “no”
+
+FIN
 
 ```
  - Código en C
 
 ```c
+#include <stdio.h>
+
+int main() {
+    double largo, ancho, espesor; //variables de entrada
+    double pulgadas = 39.37; //constante auxiliar
+    double Lp, Ap, Ep;  //variables auxiliares
+    double Atela, Vtela; //salidas
+    char otra[15]; // variable de comparación para el while, usamos otra[15] para que la respuesta que de el usuario pueda tener 14 carcteres, por si en vez de responder si dice definitivamente.
+    
+    do {
+        printf("Ingrese largo, ancho y espesor (si no sabe espesor, coloque 0): ");
+        scanf("%lf %lf %lf", &largo, &ancho, &espesor);
+        
+        Lp = largo * pulgadas;
+        Ap = ancho * pulgadas;
+        Ep = espesor * pulgadas;
+// multiplicamos todo por la constante pulgadas
+
+        Atela = Lp * Ap;
+        
+        if (espesor == 0) {
+            printf("El área de la tela es: %f n^2\n", Atela);
+        } else {
+            Vtela = Atela * Ep; // el volumen es largo *ancho * espesor, la multiplicacion de largo y ancho la teníamos en el area
+            printf("El volumen de la tela es: %f n^3\n", Vtela);
+        }
+        
+        printf("¿Desea otra medida? (escriba 'no' para salir): ");
+        scanf("%s", otra);
+        
+    } while (strcmp(otra, "no") != 0); //strcmp, sirve para comparar si dos cadenas de caracteres son iguales, 0 significa que son iguales, si son distintas da un valor menor o mayor a 0.
+    
+    return 0;
+}
 
 ```
 
@@ -476,11 +540,88 @@ int main() {
  - Pseudocódigo
 
 ```txt
+INICIO
+
+	Escribir fecha en números
+
+	Leer dia_hoy, mes_hoy, agno_hoy // cambiamos año por agno, para no tener errores por caractéres especiales.
+
+	Escribir fecha de cumpleaños en números
+
+	Leer dia_cump, mes_cump, agno_cump
+
+	a = “aún no has cumplido años”
+	b = “ya cumpliste años”
+
+Si agno_hoy > agno_cumpl
+Si mes_hoy > mes_cump
+			imprimir b
+		Sino
+			Si día_hoy > dia_cumpl
+			imprimir b
+	
+			Sino
+				Si dia_hoy == dia cump
+					imprimir “Feliz cumpleaños”
+				Sino
+					imprimir a
+				Fin si
+			Fin si
+		Fin si
+Sino
+		Si agno_hoy == agno_cump
+			imprimir “eres un bebé”
+
+		Sino
+			imprimir “o usted es bobo, o viene del futuro”
+
+FIN
 
 ```
  - Código en C
 
 ```c
+#include <stdio.h>
+
+int main() {
+    int dia_hoy, mes_hoy, agno_hoy; // variables de fecha actual
+    int dia_cump, mes_cump, agno_cump; // variables del día de cumpleaños
+    
+    printf("Ingrese la fecha de hoy (día, mes, año): ");
+    scanf("%d %d %d", &dia_hoy, &mes_hoy, &agno_hoy);
+    
+    printf("Ingrese su fecha de cumpleaños (día, mes, año): ");
+    scanf("%d %d %d", &dia_cump, &mes_cump, &agno_cump);
+    
+    if (agno_hoy > agno_cump) {
+        if (mes_hoy > mes_cump) {
+            printf("Ya cumpliste años.\n");
+        } else {
+            if (mes_hoy == mes_cump) {
+                if (dia_hoy > dia_cump) {
+                    printf("Ya cumpliste años.\n");
+                } else {
+                    if (dia_hoy == dia_cump) {
+                        printf("Feliz cumpleaños!\n");
+                    } else {
+                        printf("Aún no has cumplido años.\n");
+                    }
+                }
+            } else {
+                printf("Aún no has cumplido años.\n");
+            }
+        }
+    } else {
+        if (agno_hoy == agno_cump) {
+            printf("Eres un bebé.\n");
+        } else {
+            printf("O usted es bobo, o viene del futuro.\n");
+        }
+    }
+    // evaluamos los años en primera instancia, luego los meses, luego los días, si cumpliera en febrero y es marzo, ya sabemos cuando cumple y no hace falta ir al día, si el mes es igual, sabemos que hay que comparar el día.
+
+    return 0;
+}
 
 ```
 
@@ -495,12 +636,86 @@ int main() {
  - Pseudocódigo
 
 ```txt
+INICIO
+
+	Escribir “¿cuánto le pagan al empleado por hora?”
+	Leer n
+	
+Escribir “cuantas horas trabajadas tuvo”
+Leer h
+
+salario = 0
+
+Si h < 41
+	salario = nh
+
+Sino
+	Si h < 46
+	r = h - 40
+	salario = 40n + 2rn
+	
+	Sino
+		Si h <= 50 
+			q = h - 45 // Las horas que se pagan el triple
+			r = h -40 // las horas poe encima de 40
+			s =  r - q // las horas por encima de 40 que se pagan el doble
+			salario = 40n + 2ns + 3nq
+
+		Sino
+			imprimir “se enviará el boletín a recursos humanos”
+
+Si salario = 0
+	imprimir “se enviará un boletín”
+
+Sino 
+	imprimir “el salario es” salario
+
+FIN
 
 ```
  - Código en C
 
 ```c
+#include <stdio.h>
 
+int main() {
+    double n, h; //variables de entrada
+    double salario = 0; // variable de salida
+    double r, q, s; // variables auxiliares que afectan ciertas salidas
+   
+
+    printf("¿Cuánto le pagan al empleado por hora? ");
+    scanf("%lf", &n);
+    
+    printf("¿Cuántas horas trabajadas tuvo? ");
+    scanf("%lf", &h);
+    
+    if (h < 41) {
+        salario = n * h;
+    } else {
+        if (h < 46) {
+            r = h - 40; // en este intervalo las horas por encima de 40 se pagan al doble
+            salario = 40 * n + 2 * r * n;
+        } else {
+            if (h <= 50) {
+                q = h - 45; // las horas por encima de 45 se pagan al triple
+                r = h - 40; // horas por encima de 40
+                s = r - q; // horas por encima de 40 que se pagan al doble
+                salario = 40 * n + 2 * n * s + 3 * n * q;
+            } else {
+                printf("Se enviará el boletín a recursos humanos.\n");
+            }
+        }
+    }
+    
+    if (salario == 0) {// recordemos que == es comparativo
+        printf("Se enviará un boletín.\n");
+    } else {
+        printf("El salario es: %lf\n", salario);
+    }
+    
+    return 0;
+}
 ```
 
 ---
@@ -518,4 +733,6 @@ Traducir pseudocódigo a C implica **comprender la lógica** descrita en un leng
 
 > Pregunta final
 > 
-> - Después de este tutorial, ¿qué puntos crees que deberías reforzar para sentirte más seguro al traducir pseudocódigo a C?
+- Después de este tutorial, ¿qué puntos crees que deberías reforzar para sentirte más seguro al traducir pseudocódigo a C?
+
+Personalmente, al venir de trabajar en python, no había que especificar el tipo de variable cada vez que esta se utilizaba. Específicamente para mi, debo reforzar esto, para ir cogiendo la costumbre que no tenía. De resto, la traducción es simple, y el hecho de haber programado en otros lenguajes, da facilidad de traducción en programación. El tema de la sintaxis, es importante seguirlo trabajando, los puntos y comas al final de cada función y que todo vaya entre llaves, son otras particularidades que se deben tener en mente, aunque esto es muy parecido a la sintaxis de Javascript. 
